@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <header>
+            <h1>Interactive Quiz</h1>
+        </header>
+        
+        <main>
+            <div class="quiz-card">
+                <div id="question-container">
+                    <h2 id="question">Question goes here</h2>
+                    <ul id="options-list">
+                        <!-- Options will be injected here dynamically -->
+                    </ul>
+                </div>
+                <button id="next-btn" class="hidden">Next</button>
+                <div id="result" class="hidden">
+                    <h2>Quiz Completed!</h2>
+                    <p id="score">Your score: 0</p>
+                    <button id="restart-btn">Restart</button>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>&copy; 2024 Interactive Quiz. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

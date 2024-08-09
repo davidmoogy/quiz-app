@@ -1,0 +1,147 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.quiz-container {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #ffcc00;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Quiz Card */
+.quiz-card {
+    background: #000;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    position: relative;
+    animation: fadeIn 1s ease-out;
+}
+
+#question-container {
+    margin-bottom: 20px;
+}
+
+#question {
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#options-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#options-list li {
+    background: #333;
+    border: 1px solid #444;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+#options-list li:hover {
+    background: #444;
+    transform: scale(1.02);
+}
+
+button {
+    background: #3b82f6;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+button:hover {
+    background: #2563eb;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(1);
+}
+
+button.hidden {
+    display: none;
+}
+
+/* Result Section */
+#result {
+    color: #fff;
+    animation: fadeIn 1s ease-out;
+}
+
+#result h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#result p {
+    font-size: 1.5rem;
+}
+
+#restart-btn {
+    background: #ffcc00;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+#restart-btn:hover {
+    background: #ffb700;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 0.9rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
